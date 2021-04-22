@@ -17,6 +17,8 @@
 		647B5305262F58ED008F6CE4 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647B5304262F58ED008F6CE4 /* NotificationsView.swift */; };
 		647B5308262F590D008F6CE4 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647B5307262F590D008F6CE4 /* ProfileView.swift */; };
 		647B530B262F592A008F6CE4 /* UploadPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647B530A262F592A008F6CE4 /* UploadPostView.swift */; };
+		647B530E2630D80B008F6CE4 /* Feedcell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647B530D2630D80B008F6CE4 /* Feedcell.swift */; };
+		647B531126321BBF008F6CE4 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647B531026321BBF008F6CE4 /* SearchBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		647B5304262F58ED008F6CE4 /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
 		647B5307262F590D008F6CE4 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		647B530A262F592A008F6CE4 /* UploadPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostView.swift; sourceTree = "<group>"; };
+		647B530D2630D80B008F6CE4 /* Feedcell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feedcell.swift; sourceTree = "<group>"; };
+		647B531026321BBF008F6CE4 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				647B52FE262F58AC008F6CE4 /* FeedView.swift */,
+				647B530D2630D80B008F6CE4 /* Feedcell.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -177,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				647B5301262F58D3008F6CE4 /* SearchView.swift */,
+				647B531026321BBF008F6CE4 /* SearchBar.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -301,11 +307,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				647B5302262F58D3008F6CE4 /* SearchView.swift in Sources */,
+				647B530E2630D80B008F6CE4 /* Feedcell.swift in Sources */,
 				647B52FF262F58AC008F6CE4 /* FeedView.swift in Sources */,
 				647B52D2262F54C6008F6CE4 /* instacloneApp.swift in Sources */,
 				647B52EC262F5691008F6CE4 /* ContentView.swift in Sources */,
 				647B52FB262F5830008F6CE4 /* MainTabView.swift in Sources */,
 				647B530B262F592A008F6CE4 /* UploadPostView.swift in Sources */,
+				647B531126321BBF008F6CE4 /* SearchBar.swift in Sources */,
 				647B5308262F590D008F6CE4 /* ProfileView.swift in Sources */,
 				647B5305262F58ED008F6CE4 /* NotificationsView.swift in Sources */,
 			);
