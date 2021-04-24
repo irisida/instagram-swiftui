@@ -11,6 +11,7 @@
 		642046D5263360E40016792C /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642046D4263360E40016792C /* ProfileHeaderView.swift */; };
 		642046D826336B550016792C /* UserStatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642046D726336B550016792C /* UserStatView.swift */; };
 		642046DB26336F0D0016792C /* ProfileActionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642046DA26336F0D0016792C /* ProfileActionButtonView.swift */; };
+		642046DE263457720016792C /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642046DD263457720016792C /* ImagePicker.swift */; };
 		647B52D2262F54C6008F6CE4 /* instacloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647B52D1262F54C6008F6CE4 /* instacloneApp.swift */; };
 		647B52D6262F54C7008F6CE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 647B52D5262F54C7008F6CE4 /* Assets.xcassets */; };
 		647B52D9262F54C7008F6CE4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 647B52D8262F54C7008F6CE4 /* Preview Assets.xcassets */; };
@@ -34,6 +35,7 @@
 		642046D4263360E40016792C /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 		642046D726336B550016792C /* UserStatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatView.swift; sourceTree = "<group>"; };
 		642046DA26336F0D0016792C /* ProfileActionButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileActionButtonView.swift; sourceTree = "<group>"; };
+		642046DD263457720016792C /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		647B52CE262F54C6008F6CE4 /* instaclone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = instaclone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		647B52D1262F54C6008F6CE4 /* instacloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = instacloneApp.swift; sourceTree = "<group>"; };
 		647B52D5262F54C7008F6CE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				647B531C263329AC008F6CE4 /* Extensions.swift */,
+				642046DD263457720016792C /* ImagePicker.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -337,6 +340,7 @@
 				647B52FF262F58AC008F6CE4 /* FeedView.swift in Sources */,
 				647B52D2262F54C6008F6CE4 /* instacloneApp.swift in Sources */,
 				647B52EC262F5691008F6CE4 /* ContentView.swift in Sources */,
+				642046DE263457720016792C /* ImagePicker.swift in Sources */,
 				642046D5263360E40016792C /* ProfileHeaderView.swift in Sources */,
 				647B52FB262F5830008F6CE4 /* MainTabView.swift in Sources */,
 				642046D826336B550016792C /* UserStatView.swift in Sources */,

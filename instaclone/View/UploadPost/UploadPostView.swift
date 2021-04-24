@@ -12,13 +12,19 @@ struct UploadPostView: View {
     @State private var selectedImage: UIImage?
     @State var postImage: Image?
     @State var captionText = ""
+    @State var imagePickerPresented = false
     
     
     var body: some View {
         VStack {
-            if postImage != nil {
+            if postImage == nil {
                 
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                // action triggers the modal/sheet view by
+                // toggling the imagePickerPresented.
+                // sheet evaluates isPresented on the value
+                // of the toggled state. OnDismiss event
+                // calls the loadImage extension function
+                Button(action: { imagePickerPresented.toggle() } , label: {
                     Image(systemName: "camera.circle")
                         .resizable()
                         .renderingMode(/*@START_MENU_TOKEN@*/.template/*@END_MENU_TOKEN@*/)
@@ -28,10 +34,18 @@ struct UploadPostView: View {
                         .foregroundColor(Color.black)
                         .clipped()
                         .padding(.top, 56)
+                }).sheet(isPresented: $imagePickerPresented, onDismiss: loadImage, content: {
+                    ImagePicker(image: $selectedImage)
                 })
-            } else {
+                
+            } else if let image = postImage {
+                // postImage has been selected using the UIKit
+                // ImagePicker wrapped controller and we can
+                // now present the rest of the new post screen
+                // that allows for caption entry. The post
+                // should have the selectedImage presented
                 HStack(alignment: .top) {
-                    Image("batman")
+                    image
                         .resizable()
                         .scaledToFill()
                         .frame(width: 96, height: 96)
@@ -40,6 +54,7 @@ struct UploadPostView: View {
                     TextField("Enter the post caption", text: $captionText )
                 }.padding()
                 
+                // share / opst completion button
                 Button(action: {}, label: {
                     Text("Share")
                         .font(.system(size: 16, weight: .semibold))
@@ -52,6 +67,15 @@ struct UploadPostView: View {
             
             Spacer()
         }
+    }
+}
+
+extension UploadPostView {
+    func loadImage() {
+        guard let selectedImage = selectedImage else { return }
+        
+        // builds a swiftUI compatible image from a UIKit UIImage
+        postImage = Image(uiImage: selectedImage)
     }
 }
 
