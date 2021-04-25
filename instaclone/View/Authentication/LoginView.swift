@@ -60,13 +60,13 @@ struct LoginView: View {
                             .background(Color(#colorLiteral(red: 0.9098039269, green: 0.1368103683, blue: 0.49460866, alpha: 1)))
                             .clipShape(Capsule())
                             .padding()
-                            .shadow(color: Color.black.opacity(0.1), radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/, x:4, y:7 )
+                            .shadow(color: Color.black.opacity(0.2), radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/, x:4, y:7 )
                     })
                     
                     Spacer()
                     
                     NavigationLink(
-                        destination: SignUpView(),
+                        destination: SignUpView().navigationBarHidden(true),
                         label: {
                             HStack {
                                 Text("Don't have an account?")
