@@ -18,6 +18,7 @@ struct SignUpView: View {
     @State private var email = ""
     @State private var password = ""
     @Environment(\.presentationMode) var mode
+    @EnvironmentObject var viewModel: AuthViewModel
     
     var body: some View {
         ZStack {
@@ -77,7 +78,7 @@ struct SignUpView: View {
                         .keyboardType(.emailAddress)
                     
                     // password field
-                    CustomSecureField(text: $password, placeholder: Text("password"))
+                    CustomSecureField(text: $password, placeholder: Text("Password"))
                         .padding()
                         .background(Color(.init(white: 1, alpha: 0.15)))
                         .cornerRadius(10)
@@ -87,7 +88,9 @@ struct SignUpView: View {
                 
                 
                 
-                Button(action: {}, label: {
+                Button(action: {
+                    viewModel.signUp()
+                }, label: {
                     Text("Sign In")
                         .font(.headline)
                         .foregroundColor(.white)

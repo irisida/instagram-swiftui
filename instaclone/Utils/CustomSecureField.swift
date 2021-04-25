@@ -15,7 +15,7 @@ struct CustomSecureField: View {
         ZStack(alignment: .leading) {
             if text.isEmpty {
                 placeholder.foregroundColor(Color(.init(white: 1, alpha: 0.8)))
-                    .padding(.leading, 40)
+                    .padding(.leading, 32)
             }
             
             HStack {
@@ -33,6 +33,6 @@ struct CustomSecureField: View {
 
 struct CustomSecureField_Previews: PreviewProvider {
     static var previews: some View {
-        CustomSecureField(text: .constant(""), placeholder: Text("password"))
+        CustomSecureField(text: .constant(""), placeholder: Text("Password"))
     }
 }
