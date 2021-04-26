@@ -30,6 +30,8 @@ struct LoginView: View {
                             .padding()
                             .background(Color(.init(white: 1, alpha: 0.15)))
                             .cornerRadius(10)
+                            .keyboardType(.emailAddress)
+                            .autocapitalization(.none)
                             .foregroundColor(.white)
                             .padding(.horizontal, 32)
                         
@@ -37,6 +39,7 @@ struct LoginView: View {
                             .padding()
                             .background(Color(.init(white: 1, alpha: 0.15)))
                             .cornerRadius(10)
+                            .autocapitalization(.none)
                             .foregroundColor(.white)
                             .padding(.horizontal, 32)
                     }

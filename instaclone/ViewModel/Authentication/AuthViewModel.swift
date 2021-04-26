@@ -10,16 +10,50 @@ import Firebase
 
 class AuthViewModel: ObservableObject {
     
+    @Published var userSession: FirebaseAuth.User?
+    
+    static let shared = AuthViewModel()
+    
+    init() {
+        userSession = Auth.auth().currentUser
+    }
+    
     func login() {
         print("Login")
     }
     
-    func signUp() {
-        print("Sign up")
+    func signUp(withEmail email: String, password: String, image: UIImage?, fullName: String, userName: String) {
+        
+        guard let image = image else { return }
+        
+        ImageUploader.uploadImage(image: image) { imageUrl in
+            Auth.auth().createUser(withEmail: email, password: password) { result, error in
+                if let error = error {
+                    print(error.localizedDescription)
+                    return
+                }
+                
+                guard let user = result?.user else { return }
+                self.userSession = user
+                print("Successfully registered user...")
+                
+                let data = ["email": email,
+                            "userName": userName,
+                            "fullName": fullName,
+                            "profileImageUrl": imageUrl,
+                            "uid": user.uid ]
+                
+                Firestore.firestore().collection("users").document(user.uid).setData(data) { _ in
+                    print("Successfully uploaded user data...")
+                    self.userSession = user
+                }
+            }
+        }
     }
     
     func signOut() {
-        print("Sign out")
+        self.userSession = nil
+        try? Auth.auth().signOut()
     }
     
     func fetchUser() {

@@ -76,6 +76,7 @@ struct SignUpView: View {
                         .foregroundColor(.white)
                         .padding(.horizontal, 32)
                         .keyboardType(.emailAddress)
+                        .autocapitalization(.none)
                     
                     // password field
                     CustomSecureField(text: $password, placeholder: Text("Password"))
@@ -84,12 +85,13 @@ struct SignUpView: View {
                         .cornerRadius(10)
                         .foregroundColor(.white)
                         .padding(.horizontal, 32)
+                        .autocapitalization(.none)
                 }.padding(.bottom, 32)
                 
                 
                 
                 Button(action: {
-                    viewModel.signUp()
+                    viewModel.signUp(withEmail: email, password: password, image: selectedImage, fullName: fullName, userName: userName )
                 }, label: {
                     Text("Sign In")
                         .font(.headline)
@@ -110,7 +112,7 @@ struct SignUpView: View {
                         Text("Already have an account?")
                             .font(.system(size: 14))
                         
-                        Text("Sign In")
+                        Text("Sign Up")
                             .font(.system(size: 14, weight: .semibold))
                     }
                 }).foregroundColor(.white).padding(.bottom, 32)

@@ -17,8 +17,8 @@ struct instacloneApp: App {
     
     var body: some Scene {
         WindowGroup {
-            //ContentView()
-            LoginView().environmentObject(AuthViewModel())
+            // create the ContentView as the rootController
+            ContentView().environmentObject(AuthViewModel.shared)
         }
     }
 }
