@@ -67,6 +67,7 @@ struct SignUpView: View {
                         .cornerRadius(10)
                         .foregroundColor(.white)
                         .padding(.horizontal, 32)
+                        .autocapitalization(.none)
                     
                     // email textField
                     CustomTextField(text: $email, placeholder: Text("Email"), imageName: "envelope")
@@ -91,9 +92,13 @@ struct SignUpView: View {
                 
                 
                 Button(action: {
-                    viewModel.signUp(withEmail: email, password: password, image: selectedImage, fullName: fullName, userName: userName )
+                    viewModel.signUp(withEmail: email,
+                                     password: password,
+                                     image: selectedImage,
+                                     fullName: fullName,
+                                     userName: userName )
                 }, label: {
-                    Text("Sign In")
+                    Text("Sign Up")
                         .font(.headline)
                         .foregroundColor(.white)
                         .frame(width: 360, height: 50)
@@ -106,13 +111,17 @@ struct SignUpView: View {
                 Spacer()
                 
                 
-                
+                // Handler for users landing on the sign up
+                // view but who already have an account. It
+                // pops the navigator stack back to the login
+                // root controller and allows the user to
+                // sign-in instead. 
                 Button(action: {mode.wrappedValue.dismiss()} , label: {
                     HStack {
                         Text("Already have an account?")
                             .font(.system(size: 14))
                         
-                        Text("Sign Up")
+                        Text("Sign In")
                             .font(.system(size: 14, weight: .semibold))
                     }
                 }).foregroundColor(.white).padding(.bottom, 32)
