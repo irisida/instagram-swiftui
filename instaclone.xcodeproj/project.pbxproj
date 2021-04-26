@@ -27,6 +27,7 @@
 		642047052635FCD40016792C /* readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 642047042635FCD40016792C /* readme.md */; };
 		64204708263602F10016792C /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64204707263602F10016792C /* AuthViewModel.swift */; };
 		6420470B2636BE410016792C /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6420470A2636BE410016792C /* ImageUploader.swift */; };
+		6420470E2636FD450016792C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6420470D2636FD450016792C /* Constants.swift */; };
 		647B52D2262F54C6008F6CE4 /* instacloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647B52D1262F54C6008F6CE4 /* instacloneApp.swift */; };
 		647B52D6262F54C7008F6CE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 647B52D5262F54C7008F6CE4 /* Assets.xcassets */; };
 		647B52D9262F54C7008F6CE4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 647B52D8262F54C7008F6CE4 /* Preview Assets.xcassets */; };
@@ -60,6 +61,7 @@
 		642047042635FCD40016792C /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
 		64204707263602F10016792C /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		6420470A2636BE410016792C /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
+		6420470D2636FD450016792C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		647B52CE262F54C6008F6CE4 /* instaclone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = instaclone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		647B52D1262F54C6008F6CE4 /* instacloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = instacloneApp.swift; sourceTree = "<group>"; };
 		647B52D5262F54C7008F6CE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 				642046DD263457720016792C /* ImagePicker.swift */,
 				642046E926346DE50016792C /* CustomTextField.swift */,
 				642046EC26346DFE0016792C /* CustomSecureField.swift */,
+				6420470D2636FD450016792C /* Constants.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -412,6 +415,7 @@
 				647B5305262F58ED008F6CE4 /* NotificationsView.swift in Sources */,
 				642046E1263465500016792C /* LoginView.swift in Sources */,
 				647B531D263329AC008F6CE4 /* Extensions.swift in Sources */,
+				6420470E2636FD450016792C /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
