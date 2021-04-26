@@ -23,8 +23,8 @@ struct MainTabView: View {
                 NotificationsView()
                     .tabItem { Image(systemName: "heart") }
                 
-                ProfileView()
-                    .tabItem { Image(systemName: "person") }
+                //ProfileView()
+                //    .tabItem { Image(systemName: "person") }
             }
             .navigationTitle("Home")
             .navigationBarTitleDisplayMode(.inline)

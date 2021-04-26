@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct ProfileActionButtonView: View {
-    var isCurrentUser = false
-    var isFollowed = true
+    let isCurrentUser: Bool
+    var isFollowed = false
     
     var body: some View {
         if isCurrentUser {
@@ -48,11 +48,5 @@ struct ProfileActionButtonView: View {
                 }).cornerRadius(/*@START_MENU_TOKEN@*/3.0/*@END_MENU_TOKEN@*/)
             }
         }
-    }
-}
-
-struct ProfileActionButtonView_Previews: PreviewProvider {
-    static var previews: some View {
-        ProfileActionButtonView()
     }
 }
