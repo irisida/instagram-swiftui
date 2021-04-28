@@ -49,6 +49,7 @@
 		64BC1CD626373577003D8208 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BC1CD526373577003D8208 /* SearchViewModel.swift */; };
 		64BC1CDC263899EA003D8208 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BC1CDB263899EA003D8208 /* ProfileViewModel.swift */; };
 		64BC1CDF2638B396003D8208 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BC1CDE2638B396003D8208 /* UserService.swift */; };
+		64C99549263997B00042ED5C /* UploadPostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C99548263997B00042ED5C /* UploadPostViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,6 +90,7 @@
 		64BC1CD526373577003D8208 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		64BC1CDB263899EA003D8208 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		64BC1CDE2638B396003D8208 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		64C99548263997B00042ED5C /* UploadPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +177,7 @@
 		647B52E3262F55DB008F6CE4 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				64C995472639976D0042ED5C /* UploadPost */,
 				647B52F9262F5782008F6CE4 /* Profile */,
 				647B52F8262F5776008F6CE4 /* Authentication */,
 				647B52F7262F5769008F6CE4 /* Notifications */,
@@ -328,6 +331,14 @@
 			path = Search;
 			sourceTree = "<group>";
 		};
+		64C995472639976D0042ED5C /* UploadPost */ = {
+			isa = PBXGroup;
+			children = (
+				64C99548263997B00042ED5C /* UploadPostViewModel.swift */,
+			);
+			path = UploadPost;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -423,6 +434,7 @@
 				647B52D2262F54C6008F6CE4 /* instacloneApp.swift in Sources */,
 				647B52EC262F5691008F6CE4 /* ContentView.swift in Sources */,
 				642046DE263457720016792C /* ImagePicker.swift in Sources */,
+				64C99549263997B00042ED5C /* UploadPostViewModel.swift in Sources */,
 				642046D5263360E40016792C /* ProfileHeaderView.swift in Sources */,
 				647B52FB262F5830008F6CE4 /* MainTabView.swift in Sources */,
 				64BC1CDF2638B396003D8208 /* UserService.swift in Sources */,
