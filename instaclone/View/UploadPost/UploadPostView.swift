@@ -59,7 +59,11 @@ struct UploadPostView: View {
                 // share / opst completion button
                 Button(action: {
                     if let image = selectedImage {
-                        viewModel.uploadPost(caption: captionText, image: image)
+                        viewModel.uploadPost(caption: captionText, image: image) { _ in
+                            captionText = ""
+                            postImage = nil
+                            
+                        }
                     }
                     
                 }, label: {
