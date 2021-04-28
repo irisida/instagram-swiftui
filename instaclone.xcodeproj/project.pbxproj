@@ -50,6 +50,7 @@
 		64BC1CDC263899EA003D8208 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BC1CDB263899EA003D8208 /* ProfileViewModel.swift */; };
 		64BC1CDF2638B396003D8208 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BC1CDE2638B396003D8208 /* UserService.swift */; };
 		64C99549263997B00042ED5C /* UploadPostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C99548263997B00042ED5C /* UploadPostViewModel.swift */; };
+		64C9954C2639EB470042ED5C /* TextArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C9954B2639EB470042ED5C /* TextArea.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -91,6 +92,7 @@
 		64BC1CDB263899EA003D8208 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		64BC1CDE2638B396003D8208 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		64C99548263997B00042ED5C /* UploadPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostViewModel.swift; sourceTree = "<group>"; };
+		64C9954B2639EB470042ED5C /* TextArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextArea.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +163,7 @@
 				642046E926346DE50016792C /* CustomTextField.swift */,
 				642046EC26346DFE0016792C /* CustomSecureField.swift */,
 				6420470D2636FD450016792C /* Constants.swift */,
+				64C9954B2639EB470042ED5C /* TextArea.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -436,6 +439,7 @@
 				642046DE263457720016792C /* ImagePicker.swift in Sources */,
 				64C99549263997B00042ED5C /* UploadPostViewModel.swift in Sources */,
 				642046D5263360E40016792C /* ProfileHeaderView.swift in Sources */,
+				64C9954C2639EB470042ED5C /* TextArea.swift in Sources */,
 				647B52FB262F5830008F6CE4 /* MainTabView.swift in Sources */,
 				64BC1CDF2638B396003D8208 /* UserService.swift in Sources */,
 				642046E4263465690016792C /* SignUpView.swift in Sources */,

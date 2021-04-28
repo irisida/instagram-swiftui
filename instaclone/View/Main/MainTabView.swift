@@ -25,7 +25,7 @@ struct MainTabView: View {
                     .tag(1)
                     .tabItem { Image(systemName: "magnifyingglass") }
                 
-                UploadPostView()
+                UploadPostView(tabIndex: $selectedIndex)
                     .onTapGesture { selectedIndex = 2 }
                     .tag(2)
                     .tabItem { Image(systemName: "plus.square") }

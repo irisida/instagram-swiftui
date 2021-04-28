@@ -15,6 +15,7 @@ struct UploadPostView: View {
     @State var imagePickerPresented = false
     
     @ObservedObject var viewModel = UploadPostViewModel()
+    @Binding var tabIndex: Int
     
     
     var body: some View {
@@ -49,31 +50,46 @@ struct UploadPostView: View {
                 HStack(alignment: .top) {
                     image
                         .resizable()
-                        .scaledToFill()
+                        .scaledToFill() 
                         .frame(width: 96, height: 96)
                         .clipped()
                     
-                    TextField("Enter the post caption", text: $captionText )
+                    TextArea(text: $captionText, placeholder: "Add caption")
+                        .frame(height: 200)
                 }.padding()
                 
-                // share / opst completion button
-                Button(action: {
-                    if let image = selectedImage {
-                        viewModel.uploadPost(caption: captionText, image: image) { _ in
-                            captionText = ""
-                            postImage = nil
-                            
-                        }
-                    }
+                HStack(spacing: 16) {
+                    // Cancel / post reset
+                    Button(action: {
+                        captionText = ""
+                        postImage = nil
+                    }, label: {
+                        Text("Cancel")
+                            .font(.system(size: 16, weight: .semibold))
+                            .frame(width: 172, height: 50)
+                            .background(Color.red)
+                            .foregroundColor(.white)
+                            .cornerRadius(5.0)
+                    })
                     
-                }, label: {
-                    Text("Share")
-                        .font(.system(size: 16, weight: .semibold))
-                        .frame(width: 360, height: 50)
-                        .background(Color.blue)
-                        .foregroundColor(.white)
-                        .cornerRadius(5.0)
-                }).padding()
+                    // share / post completion button
+                    Button(action: {
+                        if let image = selectedImage {
+                            viewModel.uploadPost(caption: captionText, image: image) { _ in
+                                captionText = ""
+                                postImage = nil
+                            }
+                        }
+                        
+                    }, label: {
+                        Text("Share")
+                            .font(.system(size: 16, weight: .semibold))
+                            .frame(width: 172, height: 50)
+                            .background(Color.blue)
+                            .foregroundColor(.white)
+                            .cornerRadius(5.0)
+                    })
+                }.padding()
             }
             
             Spacer()
@@ -90,8 +106,4 @@ extension UploadPostView {
     }
 }
 
-struct UploadPostView_Previews: PreviewProvider {
-    static var previews: some View {
-        UploadPostView()
-    }
-}
+
