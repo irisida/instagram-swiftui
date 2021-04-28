@@ -48,6 +48,7 @@
 		64BC1CD326370D9D003D8208 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 64BC1CD226370D9D003D8208 /* Kingfisher */; };
 		64BC1CD626373577003D8208 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BC1CD526373577003D8208 /* SearchViewModel.swift */; };
 		64BC1CDC263899EA003D8208 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BC1CDB263899EA003D8208 /* ProfileViewModel.swift */; };
+		64BC1CDF2638B396003D8208 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BC1CDE2638B396003D8208 /* UserService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -87,6 +88,7 @@
 		647B531C263329AC008F6CE4 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		64BC1CD526373577003D8208 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		64BC1CDB263899EA003D8208 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		64BC1CDE2638B396003D8208 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				6420470A2636BE410016792C /* ImageUploader.swift */,
+				64BC1CDE2638B396003D8208 /* UserService.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -422,6 +425,7 @@
 				642046DE263457720016792C /* ImagePicker.swift in Sources */,
 				642046D5263360E40016792C /* ProfileHeaderView.swift in Sources */,
 				647B52FB262F5830008F6CE4 /* MainTabView.swift in Sources */,
+				64BC1CDF2638B396003D8208 /* UserService.swift in Sources */,
 				642046E4263465690016792C /* SignUpView.swift in Sources */,
 				642046D826336B550016792C /* UserStatView.swift in Sources */,
 				647B531726322736008F6CE4 /* UserListView.swift in Sources */,
