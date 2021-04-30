@@ -30,6 +30,8 @@ struct UserService {
                     .document(currentUid)
                     .setData([:], completion: completion)
             }
+        
+        
     }
     
     static func unfollow(uid: String, completion: FirestoreCompletion) {

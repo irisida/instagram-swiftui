@@ -30,6 +30,10 @@ class CommentsViewModel: ObservableObject {
                                    "commentText": commentText]
         
         COLLECTION_POSTS.document(postId).collection("post-comments").addDocument(data: data)
+        
+        NotificationsViewModel.uploadNotification(toUid: self.post.ownerUid,
+                                                  type: NotificationType.comment,
+                                                  post: self.post)
     }
     
     func fetchComments() {
