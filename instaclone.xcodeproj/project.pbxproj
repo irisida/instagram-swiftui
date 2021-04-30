@@ -53,6 +53,7 @@
 		64C9954C2639EB470042ED5C /* TextArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C9954B2639EB470042ED5C /* TextArea.swift */; };
 		64C9954F2639F4160042ED5C /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C9954E2639F4160042ED5C /* Post.swift */; };
 		64C995522639F5DE0042ED5C /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C995512639F5DE0042ED5C /* FeedViewModel.swift */; };
+		64C99555263A1A420042ED5C /* PostGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C99554263A1A420042ED5C /* PostGridViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -97,6 +98,7 @@
 		64C9954B2639EB470042ED5C /* TextArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextArea.swift; sourceTree = "<group>"; };
 		64C9954E2639F4160042ED5C /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		64C995512639F5DE0042ED5C /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
+		64C99554263A1A420042ED5C /* PostGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGridViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +192,7 @@
 				647B52F7262F5769008F6CE4 /* Notifications */,
 				647B52F6262F5764008F6CE4 /* Feed */,
 				64BC1CD92637672F003D8208 /* Search */,
+				64C99557263A1A470042ED5C /* PostGrid */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -348,6 +351,14 @@
 			path = UploadPost;
 			sourceTree = "<group>";
 		};
+		64C99557263A1A470042ED5C /* PostGrid */ = {
+			isa = PBXGroup;
+			children = (
+				64C99554263A1A420042ED5C /* PostGridViewModel.swift */,
+			);
+			path = PostGrid;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -442,6 +453,7 @@
 				642046EA26346DE50016792C /* CustomTextField.swift in Sources */,
 				647B52FF262F58AC008F6CE4 /* FeedView.swift in Sources */,
 				647B52D2262F54C6008F6CE4 /* instacloneApp.swift in Sources */,
+				64C99555263A1A420042ED5C /* PostGridViewModel.swift in Sources */,
 				647B52EC262F5691008F6CE4 /* ContentView.swift in Sources */,
 				642046DE263457720016792C /* ImagePicker.swift in Sources */,
 				64C99549263997B00042ED5C /* UploadPostViewModel.swift in Sources */,

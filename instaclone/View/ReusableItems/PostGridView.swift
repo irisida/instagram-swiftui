@@ -13,8 +13,14 @@ struct PostGridView: View {
     
     private let items = [GridItem(), GridItem(), GridItem()]
     private let width = UIScreen.main.bounds.width / 3
+    let config: PostGridConfig
     
-    @ObservedObject var viewModel: SearchViewModel
+    @ObservedObject var viewModel: PostGridViewModel
+    
+    init(config: PostGridConfig) {
+        self.config = config
+        self.viewModel = PostGridViewModel(config: config)
+    }
     
     var body: some View {
         LazyVGrid(columns: items, spacing: 2, content: {

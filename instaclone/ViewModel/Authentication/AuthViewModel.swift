@@ -54,10 +54,7 @@ class AuthViewModel: ObservableObject {
                             "profileImageUrl": imageUrl,
                             "uid": user.uid ]
                 
-                print("Successfully registered user...")
-                
                 COLLECTION_USERS.document(user.uid).setData(data) { _ in
-                    print("Successfully uploaded user data...")
                     self.userSession = user
                     self.fetchUser()
                 }
