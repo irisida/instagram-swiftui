@@ -54,6 +54,7 @@
 		64C9954F2639F4160042ED5C /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C9954E2639F4160042ED5C /* Post.swift */; };
 		64C995522639F5DE0042ED5C /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C995512639F5DE0042ED5C /* FeedViewModel.swift */; };
 		64C99555263A1A420042ED5C /* PostGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C99554263A1A420042ED5C /* PostGridViewModel.swift */; };
+		64C9955B263C1E310042ED5C /* FeedCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C9955A263C1E310042ED5C /* FeedCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -99,6 +100,7 @@
 		64C9954E2639F4160042ED5C /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		64C995512639F5DE0042ED5C /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
 		64C99554263A1A420042ED5C /* PostGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGridViewModel.swift; sourceTree = "<group>"; };
+		64C9955A263C1E310042ED5C /* FeedCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -308,6 +310,7 @@
 			isa = PBXGroup;
 			children = (
 				64C995512639F5DE0042ED5C /* FeedViewModel.swift */,
+				64C9955A263C1E310042ED5C /* FeedCellViewModel.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -466,6 +469,7 @@
 				647B531726322736008F6CE4 /* UserListView.swift in Sources */,
 				647B530B262F592A008F6CE4 /* UploadPostView.swift in Sources */,
 				642046D22633378B0016792C /* NotificationsCell.swift in Sources */,
+				64C9955B263C1E310042ED5C /* FeedCellViewModel.swift in Sources */,
 				64C9954F2639F4160042ED5C /* Post.swift in Sources */,
 				64BC1CD626373577003D8208 /* SearchViewModel.swift in Sources */,
 				647B531126321BBF008F6CE4 /* SearchBar.swift in Sources */,

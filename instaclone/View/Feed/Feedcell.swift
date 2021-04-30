@@ -10,25 +10,31 @@ import Kingfisher
 
 struct Feedcell: View {
     
-    let post: Post
+    @ObservedObject var viewModel: FeedCellViewModel
+    
+    var didLike: Bool { return viewModel.post.didLike ?? false}
+    
+    init(viewModel: FeedCellViewModel) {
+        self.viewModel = viewModel
+    }
     
     var body: some View {
         VStack(alignment: .leading) {
             // user info
             HStack {
-                KFImage(URL(string: post.ownerImageUrl))
+                KFImage(URL(string: viewModel.post.ownerImageUrl))
                     .resizable()
                     .scaledToFill()
                     .frame(width: 36, height: 36)
                     .clipped()
                     .cornerRadius(18)
                 
-                Text(post.ownerUsername)
+                Text(viewModel.post.ownerUsername)
                     .font(.system(size: 14, weight: .semibold))
             }.padding([.leading, .bottom], 8)
             
             // post image
-            KFImage(URL(string: post.imageUrl))
+            KFImage(URL(string: viewModel.post.imageUrl))
                 .resizable()
                 .scaledToFill()
                 .frame(maxHeight: 440 )
@@ -36,12 +42,15 @@ struct Feedcell: View {
             
             // action buttons
             HStack (spacing: 16) {
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-                    Image(systemName: "heart")
+                Button(action: {
+                    didLike ? viewModel.unlike() : viewModel.like()
+                }, label: {
+                    Image(systemName: didLike ? "heart.fill" : "heart" )
                         .resizable()
                         .scaledToFill()
                         .frame(width: 20, height: 20)
                         .font(.system(size: 16))
+                        .foregroundColor(didLike ? .red : .black)
                         .padding(4)
                 })
                 
@@ -65,7 +74,7 @@ struct Feedcell: View {
             }.foregroundColor(.black).padding(.leading, 4)
             
             // engagement
-            Text("\(post.likes) likes")
+            Text(viewModel.likeString)
                 .font(.system(size: 14, weight: .semibold))
                 .foregroundColor(.black)
                 .padding(.horizontal, 8)
@@ -73,13 +82,13 @@ struct Feedcell: View {
             
             // caption
             HStack {
-                Text(post.ownerUsername).font(.system(size: 14,
+                Text(viewModel.post.ownerUsername).font(.system(size: 14,
                                             weight: .semibold)) +
-                    Text(" \(post.caption)").font(.system(size: 15))
+                    Text(" \(viewModel.post.caption)").font(.system(size: 15))
                 
             }.padding(.horizontal, 8)
             
-            Text("\(post.timestamp.dateValue())")
+            Text("\(viewModel.post.timestamp.dateValue())")
                 .font(.system(size: 14))
                 .foregroundColor(.gray)
                 .padding(.horizontal, 8)
