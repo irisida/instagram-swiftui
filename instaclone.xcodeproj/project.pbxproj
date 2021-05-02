@@ -64,6 +64,8 @@
 		64C99573263CA06A0042ED5C /* NotificationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C99572263CA06A0042ED5C /* NotificationsViewModel.swift */; };
 		64C99576263D82BA0042ED5C /* NotificationCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C99575263D82BA0042ED5C /* NotificationCellViewModel.swift */; };
 		64C99579263DBBF90042ED5C /* LazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C99578263DBBF90042ED5C /* LazyView.swift */; };
+		64C9957C263EB7710042ED5C /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C9957B263EB7710042ED5C /* EditProfileView.swift */; };
+		64C9957F263ED16B0042ED5C /* EdirProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C9957E263ED16B0042ED5C /* EdirProfileViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -119,6 +121,8 @@
 		64C99572263CA06A0042ED5C /* NotificationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewModel.swift; sourceTree = "<group>"; };
 		64C99575263D82BA0042ED5C /* NotificationCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCellViewModel.swift; sourceTree = "<group>"; };
 		64C99578263DBBF90042ED5C /* LazyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyView.swift; sourceTree = "<group>"; };
+		64C9957B263EB7710042ED5C /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
+		64C9957E263ED16B0042ED5C /* EdirProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdirProfileViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -270,6 +274,7 @@
 				642046D4263360E40016792C /* ProfileHeaderView.swift */,
 				642046D726336B550016792C /* UserStatView.swift */,
 				642046DA26336F0D0016792C /* ProfileActionButtonView.swift */,
+				64C9957B263EB7710042ED5C /* EditProfileView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -361,6 +366,7 @@
 			isa = PBXGroup;
 			children = (
 				64BC1CDB263899EA003D8208 /* ProfileViewModel.swift */,
+				64C9957E263ED16B0042ED5C /* EdirProfileViewModel.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -487,6 +493,7 @@
 				642046ED26346DFE0016792C /* CustomSecureField.swift in Sources */,
 				647B531A26322746008F6CE4 /* UserCell.swift in Sources */,
 				647B530E2630D80B008F6CE4 /* Feedcell.swift in Sources */,
+				64C9957F263ED16B0042ED5C /* EdirProfileViewModel.swift in Sources */,
 				64C99573263CA06A0042ED5C /* NotificationsViewModel.swift in Sources */,
 				64C99567263C36250042ED5C /* CommentsViewModel.swift in Sources */,
 				647B531426322422008F6CE4 /* PostGridView.swift in Sources */,
@@ -499,6 +506,7 @@
 				642046DE263457720016792C /* ImagePicker.swift in Sources */,
 				64C99549263997B00042ED5C /* UploadPostViewModel.swift in Sources */,
 				642046D5263360E40016792C /* ProfileHeaderView.swift in Sources */,
+				64C9957C263EB7710042ED5C /* EditProfileView.swift in Sources */,
 				64C99564263C35F30042ED5C /* CommentCell.swift in Sources */,
 				64C9954C2639EB470042ED5C /* TextArea.swift in Sources */,
 				647B52FB262F5830008F6CE4 /* MainTabView.swift in Sources */,

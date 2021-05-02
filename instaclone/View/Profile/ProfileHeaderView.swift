@@ -38,10 +38,12 @@ struct ProfileHeaderView: View {
                 .font(.system(size: 15, weight: .semibold))
                 .padding([.leading, .top])
             
-            Text("Gotham's Dark Knight | Billionaire")
-                .font(.system(size: 15))
-                .padding(.leading)
-                .padding(.top, 2)
+            if let bio = viewModel.user.bio {
+                Text(bio)
+                    .font(.system(size: 15))
+                    .padding(.leading)
+                    .padding(.top, 2)
+            }
             
             HStack {
                 Spacer()
