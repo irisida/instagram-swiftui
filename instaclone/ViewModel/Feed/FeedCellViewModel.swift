@@ -10,6 +10,15 @@ import SwiftUI
 
 class FeedCellViewModel: ObservableObject {
     @Published var post: Post
+    
+    var timestampString: String {
+        let formatter = DateComponentsFormatter()
+        formatter.allowedUnits = [.second, .minute, .hour, .weekOfMonth]
+        formatter.maximumUnitCount = 1
+        formatter.unitsStyle = .abbreviated
+        return formatter.string(from: post.timestamp.dateValue(), to: Date()) ?? ""
+    }
+    
     var likeString: String {
         let label = post.likes == 1 ? "like" : "likes"
         return "\(post.likes) \(label)"
@@ -83,4 +92,5 @@ class FeedCellViewModel: ObservableObject {
             self.post.didLike = didLike
         }
     }
+    
 }

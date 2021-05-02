@@ -12,6 +12,7 @@ class AuthViewModel: ObservableObject {
     
     @Published var userSession: FirebaseAuth.User?
     @Published var currentUser: User?
+    @Published var didSendReset: Bool = false
     
     static let shared = AuthViewModel()
     
@@ -76,8 +77,16 @@ class AuthViewModel: ObservableObject {
         }
     }
     
-    func resetPassword() {
-        print("Reset Password")
+    func resetPassword(withEmail email: String) {
+        Auth.auth().sendPasswordReset(withEmail: email) { error in
+            if let error = error {
+                print("LOGINFO::: failed to send reset link. \(error.localizedDescription)")
+                return
+            }
+            
+            self.didSendReset = true
+            print("LOGINFO::: Successfully sent reset link.")
+        }
     }
     
     

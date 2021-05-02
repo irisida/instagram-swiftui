@@ -33,8 +33,8 @@ struct UploadPostView: View {
                         .renderingMode(/*@START_MENU_TOKEN@*/.template/*@END_MENU_TOKEN@*/)
                         .scaledToFill()
                         .font(Font.title.weight(.ultraLight))
-                        .frame(width: 180, height: 180)
-                        .foregroundColor(Color.black)
+                        .frame(width: 220, height: 220)
+                        .foregroundColor(Color(white: 0, opacity: 0.55))
                         .clipped()
                         .padding(.top, 56)
                 }).sheet(isPresented: $imagePickerPresented, onDismiss: loadImage, content: {
